@@ -114,7 +114,8 @@ body * {
     transition: all 0.5s;
 }
 .btn-login:hover {
-    background-color:#FCEA9C; 
+    background-color:#ffffff;
+    color:#000; 
 }
 .left-login-image {
     width: 35vw;
