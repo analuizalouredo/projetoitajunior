@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+    margin: 0;
+    font-family: Poppins,sans-serif;
+}
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    background-color: #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1 {
+    color:#F2C325;
+    font-size: 3vw;
+
+}
+.right-login {
+    background-color: #000;
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login {
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #F2C325;
+    border-radius: 20px;
+    box-shadow:  10px 40px0px #00000056;
+}
+.card-login >h1 {
+    color: #000;
+    font-weight: 800;
+    margin: 0;
+}
+.textfield {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfield >input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background:#F2C325
+    font-size: 12pt;
+    box-shadow:  10px 40px0px #00000056;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.social-media {
+    display:flex;
+    justify-content: center;
+}
+.social-icon {
+    height: 46px;
+    width:46px;
+    border:1px solid #000;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.social-icon:hover {
+    color:#FFFFFF ;
+    border-color:#FFFFFF ;
+}
+.texfield >label{
+    color: #00000056;
+    margin-bottom: 10px;
+}
+.btn-login {
+    width: 150px;
+    height: 49px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #000;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: all 0.5s;
+}
+.btn-login:hover {
+    background-color:#FFE89A; 
+}
+.left-login-image {
+    width: 35vw;
+}
+@media only screen and (max-width 950px){
+    .card-login{
+       width:85% ;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login {
+        flex-direction: column;
+
+    }
+    .left-login >h1 {
+        display: none;
+    }
+    .left-login {
+        width:100%;
+        height:auto;
+    }
+    .left-login-image {
+        width: 50vw;
+    }
+    .card-login {
+        width: 50vw;
+
+    }
+    .card-login {
+        width:90%;
+    }
+
+}
